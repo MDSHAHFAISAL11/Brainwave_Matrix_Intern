@@ -98,36 +98,31 @@ int main()
        
     switch (y)
     {
-    case 1: {
+    case 1: 
          WD();  
-         }
         break;
 
-    case 2: {
+    case 2: 
          BI();  
-         }
         break;
 
-     case 3: {
+     case 3: 
          DP();  
-         }
         break;
     
-     case 4: {
+     case 4: 
          PC();  
-         }
         break;
 
-     case 0: {
+     case 0: 
          i=0;  
-            }
         break;
     
-    default:{
+    default:
         cout<<"plz enter correct option!!\n";
         break;
-            }
-    }
+            
+     }
     }   
     return 0;
 }
