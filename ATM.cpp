@@ -1,20 +1,8 @@
 #include<iostream>
-#include<math.h>
 using namespace std;
+void op();
 int amount=5000 , pin=1234 , pin1 , t ,i=1;
-void op()
-{
-    cout<<"To continue, enter 1 \nTO exit, enter 0 \n";
-   cin>>t;
-   if (t==1)
-   {
-       
-   }
-   else if (t==0)
-   {
-        i=0;
-   }
-}
+
 void BI()
 {  
     cout<<"plz enter the PIN:- \n";
@@ -142,4 +130,18 @@ int main()
     }
     }   
     return 0;
+}
+void op()
+{
+    cout<<"To continue, enter 1 \nTO exit, enter 0 \n";
+   cin>>t;
+   if (t==0)
+   {
+       i=0;
+   }
+   else if (t!=1)
+   {
+        cout<<"invalid option!! \n";
+       op();
+   }
 }
