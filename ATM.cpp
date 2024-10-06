@@ -2,7 +2,7 @@
 #include<math.h>
 using namespace std;
 int amount=5000 , pin=1234 , pin1 , t ,i=1;
-int op()
+void op()
 {
     cout<<"To continue, enter 1 \nTO exit, enter 0 \n";
    cin>>t;
@@ -15,7 +15,7 @@ int op()
         i=0;
    }
 }
-int BI()
+void BI()
 {  
     cout<<"plz enter the PIN:- \n";
     cin>>pin1;
@@ -30,7 +30,7 @@ int BI()
     op();
 }
 
-int PC()
+void PC()
 {
     int x2 , x3;
     cout<<"plz enter current pin:- \n";
@@ -48,7 +48,7 @@ int PC()
     
 }
 
-int WD()
+void WD()
 {
     int amnt ;
     cout<<"plz enter the amount:- \n";
@@ -74,7 +74,7 @@ int WD()
 
 }
 
-int DP()
+void DP()
 {
     int amnt2 , pin1;
     cout<<"enter amount to diposite:- \n";
@@ -140,5 +140,6 @@ int main()
         break;
             }
     }
-    }      
+    }   
+    return 0;
 }
